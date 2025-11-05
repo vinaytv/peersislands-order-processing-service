@@ -1,5 +1,13 @@
 # Order Processing (Spring Boot + H2 in-memory)
 
+# prerequisites 
+
+```
+JDK 17 and above
+Apache Maven
+
+```
+
 ## Run
 
 ```
