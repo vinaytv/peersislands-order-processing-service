@@ -14,7 +14,7 @@ public class PendingPromotionJob {
         this.service = service;
     }
 
-    @Scheduled(fixedRate = 300)
+    @Scheduled(fixedRate = "${orders.jobs.promote.fixed-rate-ms:300000}")
     @SchedulerLock(name = "PendingPromotionJob.promote",
             lockAtMostFor = "PT4M",
             lockAtLeastFor = "PT30S")
